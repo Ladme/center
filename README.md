@@ -14,7 +14,7 @@ gcc main.c -L{PATH_TO_GROAN} -I{PATH_TO_GROAN} ...
 
 ## Installation
 
-1) Run `make` to create a binary file `center` that you can place wherever you want.
+1) Run `make groan=PATH_TO_GROAN` to create a binary file `center` that you can place wherever you want. `PATH_TO_GROAN` is a path to the directory containing groan library (containing `groan.h` and `libgroan.a`).
 2) (Optional) Run `make install` to copy the the binary file `center` into `${HOME}/.local/bin`.
 
 ## Options
