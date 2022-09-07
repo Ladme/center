@@ -7,10 +7,6 @@ Uses state-of-the-art algorithm for the calculation of center of geometry in per
 ## Dependencies
 
 `center` requires you to have groan library installed. You can get groan from [here](https://github.com/Ladme/groan). See also the [installation instructions](https://github.com/Ladme/groan#installing) for groan.
-Note that if you do not follow the step 3 of the groan installation guide, you will have to add path to the directory containing the groan library into the makefile like this:
-```
-gcc main.c -L{PATH_TO_GROAN} -I{PATH_TO_GROAN} ...
-```
 
 ## Installation
 
