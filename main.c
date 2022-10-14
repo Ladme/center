@@ -57,7 +57,11 @@ int get_arguments(
             break;
         // skip frames
         case 's':
-            sscanf(optarg, "%d", skip);
+            if (sscanf(optarg, "%d", skip) != 1) {
+                fprintf(stderr, "Could not parse skip value (flag '-s').\n");
+                return 1;
+            }
+            
             if (*skip <= 0) {
                 fprintf(stderr, "Skip must be positive.\n");
                 return 1;
